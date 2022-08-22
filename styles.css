@@ -1,46 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
 }
 
+.img-nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+img {
+    height: 70px;
+    width: 70px;
+    margin: 0px 10px;
+}
+
+.nombre-logo {
+    color: gray;
+    padding: 0px 0px 0px 20px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Michroma', sans-serif;
+}
 
 header {
-    background-color: rgb(220, 228, 232);
+    height: 90px;
     width: 100%;
+    padding: 0px 45px;
+    background-color: rgb(22, 99, 138);
+    box-shadow: rgb(22, 99, 138) 0px 8px 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    padding: 0px 25px;
+    align-items: center; 
     position: fixed;
     top: 0;
 
 }
 
-.logo-alas {
-    height: 50%;
-}
 
-.nav, .lis{
+ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.nav {
-    gap: 150px;
-}
-
-.lis {
     gap: 35px;
+    list-style: none;
 }
 
-.lis a{
-    color: rgb(69, 34, 34);
-    font-weight: 900;
+
+.a-lis-nav{
+    color: rgb(197, 227, 229);
+    font-weight: 300;
+    text-decoration: none;
 }
 
 
