@@ -1,0 +1,81 @@
+@media (max-width: 992px) {
+    .h1-p-button {
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    #section-1 img {
+        display: none;
+    }
+
+    .h1-p h1 {
+        display: block;
+        width: 100%;
+    }
+
+    .h1-p p {
+        max-width: 80%;
+        font-size: 18px;
+    }
+
+    .h1-p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .reserv-punt {
+        justify-content: center;
+    }
+
+    #section-2 p {
+        font-size: 20px;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .nav ul {
+        background-color: var(--green-aqua);
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 90px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav i {
+        display: block;
+    }
+
+    #icon-menu:checked ~ .nav-lista {
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+    }
+
+    .h1-p-button p {
+        max-width: 100%;
+    }
+
+    #section3 {
+        max-width: 80%;
+    }
+
+    .p-section3 {
+        text-align: center;
+    }
+}

@@ -7,49 +7,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaqiueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="header">
-        <img src="./img-tp-nft/logo-nr.png" alt="Logo NR" >
+        <img src="./img-tp-nft/logo-nr.png" alt="Logo NR">
         <nav class="nav">
-            <ul>
-                <li><a class="a-lis-nav" href="#">Home</a></li>
+            <label for="icon-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="icon-menu">
+
+
+            <ul class="nav-lista">
+                <li><a class="a-lis-nav" href="section-1">Home</a></li>
+                <li><a class="a-lis-nav" href="#">Nosotros</a></li>
                 <li><a class="a-lis-nav" href="#">Suites</a></li>
-                <li><a class="a-lis-nav" href="#">Reservas</a></li>
                 <li><a class="a-lis-nav" href="#">Ubicación</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="section-1" >
-            <div class="h1-p-span" >
-                <div class="div-h1-p">
-                    <h1>North Resort</h1>
-                    <p>Un complejo que cuenta con un Hotel completo y amplio,
-                       las mejores habitaciones y suites premium, aprovechando
-                       todas sus dimensiones podemos encontrarnos con diversos 
-                       entretenimientos y/o actividades. Jacuzzi interior, Piscina,
-                       Gimnasio y Parque de juegos para los mas chicos 
+        <section id="section-1">
+            <div class="h1-p-button">
+                <div class="h1-p">
+                    <h1>North Resort <span>Residence</span></h1>
+                    <p>Un complejo que cuenta con las mejores habitaciones
+                        y suites premium, aprovechando todas sus dimensiones podemos
+                        encontrarnos con diversos entretenimientos y/o actividades: jacuzzi
+                        interior, piscina, imnasio y Parque de juegos para los mas chicos ,
+                        ademas de un restaurant-parrilla con una amplia variedad de comidas
+                        al plato, bebidas y coctels.
                     </p>
                 </div>
-                <div class="reserv-punt" >                    
-                    <a class="a-reserv-punt" href="#">Reservar</a>
-                    <a class="a-reserv-punt" href="#">Puntúanos</a>
+                <div class="reserv-punt">
+                    <a class="a-ver-mas" href="#">Ver mas</a>
+                    <a class="a-puntuanos" href="#">Puntúanos</a>
                 </div>
             </div>
-            <img src="./img-tp-nft/resort.jpg" alt="Resort">
+            <img src="./img-tp-nft/hotel.jpg" alt="Resort">
 
         </section>
-        <section>
+        <section id="section-2">
             <p>
-                En North Resort garantizamos poder brindarle la mejor calidad de
-                 confort, avalado por nuestros cientes a lo largo 30 años.
+                En North Resort garantizamos poder brindarle la mejor calidad de confort durante su
+                hospedaje, avalado por nuestros cientes durante mas de 30 años. No podria haber lugar
+                mejor, 6 hectareas a su disposicion para obtener una mejor experiencia tanto a la hora de
+                descansar, como para realizar actividades. Siempre a disposicion de los residentes.
             </p>
-            
+        </section>
+        <section id="section3">
+            <h2>Alojamientos</h2>
+            <p class="p-section3">Nuestras Suites y Cabañas estan equipadas con sommier, sala de estar, baño y cocina,
+                y vajilla completa</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Single</h3>
+                    <img class="suites" src="./img-tp-nft/single.jpg" alt="single">
+                    <p>Amplia Suite con hall de entrada y acceso a todas las intalaciones</p>
+                </div>
+                <div class="card">
+                    <h3>Suite Doble</h3>
+                    <img class="suites" src="./img-tp-nft/suite-doble.jpg" alt="doble">
+                    <p>Habitacion doble con jacuzzi, camas king, ventanal y vista al paisaje exterior.</p>
+                </div>
+                <div class="card">
+                    <h3>Cabañas</h3>
+                    <img class="suites" src="./img-tp-nft/cabaña1.jpg" alt="cabaña">
+                    <p>Cabaña totalmetnte equipada, con dos pisos, 4 habitaciones y vista al Lago del Faro</p>
+                </div>
+            </div>
         </section>
 
     </main>
+    <footer id="contacto">
+        <div class="contact">
+            <div>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>+54 (011) 23456789</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@northresort.com.ar</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ruta 8 km 70 Ing. Maschwitz Bs. As.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <img class="logo-footer" src="./img-tp-nft/logo-nr.png" alt="Logo NR">
+
+            </div>
+        </div>
+
+        <div class="seguinos">
+            <p>Seguinos en redes!</p>
+            <ul>
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

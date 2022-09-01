@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+:root {
+    --background: rgb(14, 54, 101);
+    --green-aqua: rgb(22, 99, 138);
+    --black-shadow: black 0px 2px 10px;
+    --text-nav: rgb(250, 254, 254);
+    --text-title: rgb(75, 74, 74);
+    --text-title2: gray;
+    --text-gray: darkgray;
+    --border: rgb(101, 114, 101);
+    --button-beige: rgb(147, 135, 120);
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -23,14 +37,28 @@
     align-items: center; 
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
-nav ul{
+.nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
     list-style: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav i {
+    font-size: 30px;
+    display: none;
+}
+
+#icon-menu {
+    display: none;
 }
 
 .a-lis-nav{
@@ -39,62 +67,79 @@ nav ul{
     text-decoration: none;
 }
 
-.div-h1-p h1 {
-    color: rgb(75, 74, 74);
-    padding: 0px 0px 0px 20px;
-    font-size: 30px;
-    font-weight: 900;
-    font-family: 'Michroma', sans-serif;
-    padding:  30px;
-
-}
-
 body { 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: rgb(14, 54, 101);
 }
 
-.section-1 {
+main {
+    margin: 90px 0px;
+
+
+}
+
+#section-1 {
+    background-image: url(./img-tp-nft/complejo-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 80px;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 100px;
 }
 
-.section-1 img {
-    height: 300px;
+#section-1 img {
+    height: 320px;
     border-radius: 10px;
+    border: 4px solid black;
 }
 
-main {
-    margin: 150px 50px 50px 80px;
+.h1-p-button h1 {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    text-shadow: 1px 1px 0 black;
+    padding: 0px 0px 0px 20px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Michroma', sans-serif;
+    padding:  30px;
 }
 
-.div-h1-p p {
-    color: darkgrey;
-    max-width: 600px;
-    font-weight: 700;
+ span {
+    color: rgb(119, 83, 83);
  }
 
-.h1-p-span {
+.h1-p-button p {
+    color: white;
+    max-width: 550px;
+    font-weight: 200;
+ }
+
+.h1-p-button {
+    background: linear-gradient( rgba(5, 7, 12, 0.65) , rgba(5, 7, 12, 0.65));
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    padding: 0px 20px 30px 20px;
+    border-radius: 15px;
+
 }
 
 .reserv-punt {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 0px 100px;
+    gap: 0px 85px;
     list-style: none;
 }
 
 .reserv-punt a {
     text-decoration: none;
-    color: white;
-    background-color: rgb(2, 189, 252);
+    border: 3px solid rgb(101, 114, 101);
     width: 130px;
     height: 35px;
     font-size: 18px;
@@ -104,7 +149,145 @@ main {
     align-items: center;
     justify-content: center;
 }
+ .a-ver-mas {
+    color: white;
+    background: linear-gradient( var(--green-aqua), rgb(151, 191, 211));
+ }
 
-.section-2 {
-    margin: 100px;
+ .a-puntuanos {
+    color: white;
+    background: rgb(138, 132, 123)/*linear-gradient( rgb(151, 191, 211), var(--green-aqua) )*/;
+ }
+
+#section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px;
+    padding: 20px 80px;
+}
+
+#section-2 p {
+    text-align: center;
+    color: darkgray;
+    max-width: 800px;
+    width: 90%;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px;
+    gap: 10px;
+}
+
+#section3 h2 {
+    color: var(--text-title);
+    font-weight: 900;
+    font-family: 'Michroma', sans-serif;
+}
+
+.p-section3  {
+    margin: 20px 0px;
+    color: var(--text-title2);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    gap: 60px;
+}
+
+.card {
+    width: 250px;
+    height: 320px;
+    background: rgb(184, 163, 143);
+    padding: 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cards h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.card p {
+    width: 70%;
+    color: var(--text-title) ;
+    font-weight: 900;
+}
+.suites{
+    height: 161px;
+    width: 230px;
+    margin: 5px 0px;
+    border: 2px solid black;
+}
+
+#contacto {
+    background: rgb(216, 213, 213);
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .contact {
+    width: 100%;
+    padding: 25px 60px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+ }
+
+ .contact ul {
+    margin: 0px 0px 0px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+
+ } 
+ .contact li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 200px;
+    text-align: center;
+
+ }
+
+.logo-footer {
+    height: 100px;
+}
+
+.seguinos {
+    background: white;
+    /*background: rgb(216, 213, 213);*/
+    width: 100%;
+    padding: 10px 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seguinos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
 }
